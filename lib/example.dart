@@ -167,9 +167,9 @@ class App extends StatelessWidget{
         GlobalMaterialLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
-        UgLoLocalizations.delegate,
-        UgLoLocalizations.cupertinoDelegate,
-        UgLoLocalizations.widgetsDelegate
+        UgLocalizations.delegate,
+        UgLocalizations.cupertinoDelegate,
+        UgLocalizations.widgetsDelegate
       ],
       supportedLocales: const [
         Locale('ug','CN'),

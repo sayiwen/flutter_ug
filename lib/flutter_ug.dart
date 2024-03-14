@@ -11,8 +11,8 @@ import 'package:intl/number_symbols_data.dart' as number_symbols_data;
 import 'package:intl/date_symbols.dart' as intl2;
 
 
-class UgLoLocalizations{
-  static const UgLoLocalizationsDelegate delegate = UgLoLocalizationsDelegate();
+class UgLocalizations{
+  static const UgLocalizationsDelegate delegate = UgLocalizationsDelegate();
   static const UgCupertinoLoLocalizationsDelegate cupertinoDelegate = UgCupertinoLoLocalizationsDelegate();
   static const UgWidgetsLocalizationsDelegate widgetsDelegate = UgWidgetsLocalizationsDelegate();
 }
@@ -294,9 +294,9 @@ void loadDateIntlDataIfNotLoaded() {
 }
 
 
-class UgLoLocalizationsDelegate extends LocalizationsDelegate<MaterialLocalizations>{
+class UgLocalizationsDelegate extends LocalizationsDelegate<MaterialLocalizations>{
 
-  const UgLoLocalizationsDelegate();
+  const UgLocalizationsDelegate();
 
   static final Map<Locale, Future<MaterialLocalizations>> _loadedTranslations = <Locale, Future<MaterialLocalizations>>{};
 
@@ -358,7 +358,7 @@ class UgLoLocalizationsDelegate extends LocalizationsDelegate<MaterialLocalizati
           decimalFormat = intl.NumberFormat.decimalPattern();
           twoDigitZeroPaddedFormat = intl.NumberFormat('00');
         }
-        return SynchronousFuture<MaterialLocalizations>(UgLocalizations(
+        return SynchronousFuture<MaterialLocalizations>(UgMaterialLocalizations(
           fullYearFormat: fullYearFormat,
           compactDateFormat: compactDateFormat,
           shortDateFormat: shortDateFormat,
@@ -471,11 +471,11 @@ class UgWidgetsLocalizationsDelegate extends LocalizationsDelegate<WidgetsLocali
 }
 
 
-class UgLocalizations extends GlobalMaterialLocalizations{
+class UgMaterialLocalizations extends GlobalMaterialLocalizations{
   /// Create an instance of the translation bundle for Uzbek.
   ///
   /// For details on the meaning of the arguments, see [GlobalMaterialLocalizations].
-  const UgLocalizations({
+  const UgMaterialLocalizations({
     super.localeName = 'ug',
     required super.fullYearFormat,
     required super.compactDateFormat,
