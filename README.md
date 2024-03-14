@@ -9,7 +9,7 @@ To use this package, add `flutter_ug` as a [dependency in your pubspec.yaml file
 
 ```yaml
 dependencies:
-  flutter_ug: ^0.0.1
+  flutter_ug: ^0.0.2
 ```
 
 ## Usage
